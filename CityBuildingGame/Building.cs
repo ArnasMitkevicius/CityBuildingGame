@@ -13,6 +13,6 @@ namespace CityBuildingGame.Library
         public int Level { get; set; }
         public Dictionary<string, double> Pricing { get; set; }
 
-        public abstract void Build(UserResourcesContainer userResourcesContainer);
+        public abstract bool CanBuild(UserResourcesContainer userResourcesContainer);
     }
 }

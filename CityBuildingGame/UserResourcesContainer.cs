@@ -35,5 +35,9 @@ namespace CityBuildingGame.Library
             Resources[resourceID] -= quantity;
         }
 
+        public bool HasUserEnoughtResources(string resourceID, double quantity)
+        {
+            return Resources[resourceID] >= quantity;
+        }
     }
 }
