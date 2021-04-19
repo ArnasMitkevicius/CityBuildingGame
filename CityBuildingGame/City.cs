@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CityBuildingGame.Library
 {
-    class City
+    public class City
     {
 
         string[] cityArray;
