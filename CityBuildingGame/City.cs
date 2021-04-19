@@ -8,10 +8,15 @@ namespace CityBuildingGame.Library
 {
     class City
     {
+
         string[] cityArray;
         public City()
         {
             cityArray = new string[10];
+            for (int i=0;i<cityArray.Length;i++)
+            {
+                cityArray[i] = "-";
+            }
         }
 
         public string[] GetCity()
@@ -32,6 +37,15 @@ namespace CityBuildingGame.Library
         public void SetBuilding(string Building, int spot)
         {
             cityArray[spot] = Building;
+        }
+
+        public bool canBuild(int spot)
+        {
+            if (Convert.ToString(spot) == "-")
+            {
+                return true;
+            }
+            else return false;
         }
 
     }
