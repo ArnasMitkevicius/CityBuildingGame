@@ -14,5 +14,15 @@ namespace CityBuildingGame.Library
         public Dictionary<string, double> Pricing { get; set; }
 
         public abstract bool CanBuild(UserResourcesContainer userResourcesContainer);
+
+        public bool UserHasEnoughtMoney(UserResourcesContainer userResourcesContainer)
+        {
+            foreach (var value in Pricing)
+            {
+                if (!userResourcesContainer.HasUserEnoughtResources(value.Key, value.Value)) return false;
+            }
+
+            return true;
+        }
     }
 }
