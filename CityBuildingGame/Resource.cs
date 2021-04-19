@@ -8,7 +8,7 @@ namespace CityBuildingGame.Library
 {
     public abstract class Resource
     {
-        public string ID { get; set; }
         public string Title { get; set; }
+        public double Quantity { get; set; }
     }
 }

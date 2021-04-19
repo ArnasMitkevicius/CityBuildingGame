@@ -6,7 +6,9 @@ namespace CityBuildingConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.Write("Your resources: ");
+
+            Console.Write("Your buildings: ");
         }
     }
 }

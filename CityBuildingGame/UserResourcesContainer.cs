@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,9 @@ namespace CityBuildingGame.Library
         public UserResourcesContainer()
         {
             Resources = new Dictionary<string, double>();
+            AddResource("Wheat", 0);
+            AddResource("Wood", 0);
+            AddResource("Stone", 0);
         }
 
         public UserResourcesContainer(Dictionary<string, double> resources)

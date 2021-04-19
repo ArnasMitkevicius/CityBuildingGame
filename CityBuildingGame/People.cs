@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace CityBuildingGame.Library
 {
-    class testt
+    public class People
     {
+        public int Total;
+        public int Unavailable;
     }
 }
