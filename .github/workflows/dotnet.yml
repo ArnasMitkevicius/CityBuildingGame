@@ -33,6 +33,7 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
+        project_path: CityBuildingGame/CityBuilding.Game.UnitTests
     - name: Restore dependencies
       run: dotnet restore
     - name: Test
