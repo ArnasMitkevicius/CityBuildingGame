@@ -24,5 +24,10 @@ namespace CityBuildingGame.Library
 
             return true;
         }
+
+        public bool CanDowngrade()
+        {
+            return true;
+        }
     }
 }
