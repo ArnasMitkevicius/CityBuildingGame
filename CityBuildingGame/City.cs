@@ -48,5 +48,13 @@ namespace CityBuildingGame.Library
             else return false;
         }
 
+        public bool canDestroy(int spot)
+        {
+            if (Convert.ToString(spot) == "-")
+            {
+                return false;
+            }
+            else return true;
+        }
     }
 }

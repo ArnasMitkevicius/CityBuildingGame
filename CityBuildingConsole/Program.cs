@@ -8,7 +8,7 @@ namespace CityBuildingConsole
         {
             Console.Write("Your resources: ");
 
-            Console.Write("Your buildings: ");
+            Console.WriteLine("Your buildings: ");
         }
     }
 }

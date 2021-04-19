@@ -24,6 +24,11 @@ namespace CityBuildingGame.Library
             Resources = resources;
         }
 
+        public Dictionary<string, double> getResource()
+        {
+            return Resources;
+        }
+
         public void SetResources(Dictionary<string, double> resources)
         {
             Resources = resources;
