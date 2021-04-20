@@ -1,0 +1,69 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CityBuildingGame.Library
+{
+    public class City
+    {
+
+        string[] cityArray;
+        public City()
+        {
+            cityArray = new string[10];
+            for (int i=0;i<cityArray.Length;i++)
+            {
+                cityArray[i] = "-";
+            }
+        }
+
+        public int getSize()
+        {
+            return cityArray.Length;
+        }
+
+        public string[] GetCity()
+        {
+        return cityArray;
+        }
+
+        public string GetBuilding(int spot)
+        {
+            return cityArray[spot];
+        }
+
+        public void SetCity(string[] city)
+        {
+            cityArray = city;
+        }
+
+        public void SetBuilding(string Building, int spot)
+        {
+            cityArray[spot] = Building;
+        }
+        public void DestroyBuilding(int spot)
+        {
+            cityArray[spot] = "-";
+        }
+
+        public bool canBuild(int spot)
+        {
+            if (Convert.ToString(cityArray[spot]) == "-")
+            {
+                return true;
+            }
+            else return false;
+        }
+
+        public bool canDestroy(int spot)
+        {
+            if (Convert.ToString(cityArray[spot]) == "-")
+            {
+                return false;
+            }
+            else return true;
+        }
+    }
+}
