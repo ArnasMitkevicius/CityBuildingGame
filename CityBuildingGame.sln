@@ -7,7 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityBuildingGame.Library", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityBuildingConsole", "CityBuildingConsole\CityBuildingConsole.csproj", "{91870956-03E7-4590-893E-662E869EB665}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityBuilding.Game.UnitTests", "CityBuilding.Game.UnitTests\CityBuilding.Game.UnitTests.csproj", "{87DB4398-673C-4C58-A7CD-8491245A41D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityBuilding.Game.UnitTests", "CityBuilding.Game.UnitTests\CityBuilding.Game.UnitTests.csproj", "{87DB4398-673C-4C58-A7CD-8491245A41D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Items", "Items", "{57C249F8-3C8C-4E9A-9461-8CB909E4A98F}"
+	ProjectSection(SolutionItems) = preProject
+		Resources.json = Resources.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
