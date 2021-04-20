@@ -19,6 +19,11 @@ namespace CityBuildingGame.Library
             }
         }
 
+        public int getSize()
+        {
+            return cityArray.Length;
+        }
+
         public string[] GetCity()
         {
         return cityArray;

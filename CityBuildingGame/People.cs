@@ -10,5 +10,16 @@ namespace CityBuildingGame.Library
     {
         public int Total;
         public int Unavailable;
+
+        public People()
+        {
+            Total = 10;
+            Unavailable = 0;
+        }
+
+        public int getTotal()
+        {
+            return Total;
+        }
     }
 }

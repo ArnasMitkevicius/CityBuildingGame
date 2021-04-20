@@ -14,9 +14,9 @@ namespace CityBuildingGame.Library
         public UserResourcesContainer()
         {
             Resources = new Dictionary<string, double>();
-            AddResource("Wheat", 0);
-            AddResource("Wood", 0);
-            AddResource("Stone", 0);
+            Resources.Add("Wheat", 50);
+            Resources.Add("Wood", 50);
+            Resources.Add("Stone", 50);
         }
 
         public UserResourcesContainer(Dictionary<string, double> resources)
