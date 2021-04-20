@@ -43,10 +43,14 @@ namespace CityBuildingGame.Library
         {
             cityArray[spot] = Building;
         }
+        public void DestroyBuilding(int spot)
+        {
+            cityArray[spot] = "-";
+        }
 
         public bool canBuild(int spot)
         {
-            if (Convert.ToString(spot) == "-")
+            if (Convert.ToString(cityArray[spot]) == "-")
             {
                 return true;
             }
@@ -55,7 +59,7 @@ namespace CityBuildingGame.Library
 
         public bool canDestroy(int spot)
         {
-            if (Convert.ToString(spot) == "-")
+            if (Convert.ToString(cityArray[spot]) == "-")
             {
                 return false;
             }
