@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -25,6 +24,9 @@ jobs:
       run: dotnet test --no-build --verbosity normal
       
   test:
+  
+    needs: build
+    
     runs-on: ubuntu-latest
 
     steps:
@@ -47,6 +49,7 @@ jobs:
       if: ${{ always() }}
   
   deploy:
+    needs: test
     runs-on: ubuntu-latest
 
     steps:
